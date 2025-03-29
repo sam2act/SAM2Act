@@ -312,6 +312,7 @@ We sincerely thank the authors of the following repositories for sharing their c
 - [RVT](https://github.com/NVlabs/RVT)
 - [SAM-E](https://github.com/pipixiaqishi1/SAM-E)
 - [SAM2](https://github.com/facebookresearch/sam2)
+- [The COLOSSEUM](https://robot-colosseum.github.io/)
 
 
 
