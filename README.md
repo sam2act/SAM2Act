@@ -274,6 +274,11 @@ python eval.py \
   --model-name model_plus_19.pth
 ```
 
+## Real-world experiments
+
+For inference please see `sam2act/real/sam2act_cli.py` for a convenient command-line interface integration.
+You need to install additional dependencies with `pip install -e ".[real]"`. For more information about the setup, please see the [SAM2Act section](https://robits.ai/en/latest/sam2act.html) of the [RoBits documentation](https://robits.ai).
+
 ## Common Questions
 We are running our code mainly on a headless server. Here are some solutions to the issues we met.
 - If you get error like `cannot find file libcoppeliaSim.so.1`, this might because that library specifically looks for `libcoppeliaSim.so.1`, but the actual shared library file is named `libcoppeliaSim.so`. Try running:

@@ -22,7 +22,7 @@ requirements = [
     "pyquaternion",
     "matplotlib",
     "bitsandbytes==0.38.1",
-    "triton==2.3.1",
+    #"triton==2.3.1",
     "transforms3d",
     "clip @ git+https://github.com/openai/CLIP.git",
     "wandb",
@@ -52,6 +52,16 @@ setup(
     extras_require={
         "xformers": [
             "xformers @ git+https://github.com/facebookresearch/xformers.git@main#egg=xformers",
+        ],
+        "real": 
+        [
+            "robits[real,audio]>=0.5.1"
         ]
     },
+
+    entry_points={
+        'console_scripts': [
+            'sam2act-agent = sam2act.real.sam2act_cli:cli',
+        ]
+    }
 )
